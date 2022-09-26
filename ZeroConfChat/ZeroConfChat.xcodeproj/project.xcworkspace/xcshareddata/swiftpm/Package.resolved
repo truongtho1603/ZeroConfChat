@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "bonjourwrapper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/truongtho1603/BonjourWrapper",
+      "state" : {
+        "branch" : "main",
+        "revision" : "efbfc8cdd40be8c727d1aa1b99f68fd10af19f30"
+      }
+    }
+  ],
+  "version" : 2
+}

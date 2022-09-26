@@ -14,6 +14,7 @@
 		31F4016828E20ADB00CA3F57 /* ZeroConfChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4016728E20ADB00CA3F57 /* ZeroConfChatTests.swift */; };
 		31F4017228E20ADB00CA3F57 /* ZeroConfChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4017128E20ADB00CA3F57 /* ZeroConfChatUITests.swift */; };
 		31F4017428E20ADB00CA3F57 /* ZeroConfChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4017328E20ADB00CA3F57 /* ZeroConfChatUITestsLaunchTests.swift */; };
+		31F4018228E20BC200CA3F57 /* BonjourWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 31F4018128E20BC200CA3F57 /* BonjourWrapper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31F4018228E20BC200CA3F57 /* BonjourWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,9 @@
 			dependencies = (
 			);
 			name = ZeroConfChat;
+			packageProductDependencies = (
+				31F4018128E20BC200CA3F57 /* BonjourWrapper */,
+			);
 			productName = ZeroConfChat;
 			productReference = 31F4015228E20ADA00CA3F57 /* ZeroConfChat.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 31F4014928E20ADA00CA3F57;
+			packageReferences = (
+				31F4018028E20BC100CA3F57 /* XCRemoteSwiftPackageReference "BonjourWrapper" */,
+			);
 			productRefGroup = 31F4015328E20ADA00CA3F57 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -576,6 +584,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		31F4018028E20BC100CA3F57 /* XCRemoteSwiftPackageReference "BonjourWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/truongtho1603/BonjourWrapper";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		31F4018128E20BC200CA3F57 /* BonjourWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31F4018028E20BC100CA3F57 /* XCRemoteSwiftPackageReference "BonjourWrapper" */;
+			productName = BonjourWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 31F4014A28E20ADA00CA3F57 /* Project object */;
 }
