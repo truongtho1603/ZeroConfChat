@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31E1DB3828EB268300BEB185 /* P2PBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1DB3728EB268300BEB185 /* P2PBrowserTests.swift */; };
 		31F4015628E20ADA00CA3F57 /* ZeroConfChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4015528E20ADA00CA3F57 /* ZeroConfChatApp.swift */; };
 		31F4015828E20ADA00CA3F57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4015728E20ADA00CA3F57 /* ContentView.swift */; };
 		31F4015A28E20ADB00CA3F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F4015928E20ADB00CA3F57 /* Assets.xcassets */; };
 		31F4015D28E20ADB00CA3F57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31F4015C28E20ADB00CA3F57 /* Preview Assets.xcassets */; };
-		31F4016828E20ADB00CA3F57 /* ZeroConfChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4016728E20ADB00CA3F57 /* ZeroConfChatTests.swift */; };
-		31F4017228E20ADB00CA3F57 /* ZeroConfChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4017128E20ADB00CA3F57 /* ZeroConfChatUITests.swift */; };
-		31F4017428E20ADB00CA3F57 /* ZeroConfChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4017328E20ADB00CA3F57 /* ZeroConfChatUITestsLaunchTests.swift */; };
 		31F4018228E20BC200CA3F57 /* BonjourWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 31F4018128E20BC200CA3F57 /* BonjourWrapper */; };
+		31F4018628E3107C00CA3F57 /* P2PBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4018528E3107C00CA3F57 /* P2PBrowser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,16 +24,10 @@
 			remoteGlobalIDString = 31F4015128E20ADA00CA3F57;
 			remoteInfo = ZeroConfChat;
 		};
-		31F4016E28E20ADB00CA3F57 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 31F4014A28E20ADA00CA3F57 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 31F4015128E20ADA00CA3F57;
-			remoteInfo = ZeroConfChat;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31E1DB3728EB268300BEB185 /* P2PBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2PBrowserTests.swift; sourceTree = "<group>"; };
 		31F4015228E20ADA00CA3F57 /* ZeroConfChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroConfChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F4015528E20ADA00CA3F57 /* ZeroConfChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroConfChatApp.swift; sourceTree = "<group>"; };
 		31F4015728E20ADA00CA3F57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,10 +35,7 @@
 		31F4015C28E20ADB00CA3F57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		31F4015E28E20ADB00CA3F57 /* ZeroConfChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZeroConfChat.entitlements; sourceTree = "<group>"; };
 		31F4016328E20ADB00CA3F57 /* ZeroConfChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroConfChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		31F4016728E20ADB00CA3F57 /* ZeroConfChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroConfChatTests.swift; sourceTree = "<group>"; };
-		31F4016D28E20ADB00CA3F57 /* ZeroConfChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeroConfChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		31F4017128E20ADB00CA3F57 /* ZeroConfChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroConfChatUITests.swift; sourceTree = "<group>"; };
-		31F4017328E20ADB00CA3F57 /* ZeroConfChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroConfChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		31F4018528E3107C00CA3F57 /* P2PBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2PBrowser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,22 +54,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31F4016A28E20ADB00CA3F57 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		31F4014928E20ADA00CA3F57 = {
 			isa = PBXGroup;
 			children = (
+				31F4018328E3105A00CA3F57 /* Bonjour */,
 				31F4015428E20ADA00CA3F57 /* ZeroConfChat */,
 				31F4016628E20ADB00CA3F57 /* ZeroConfChatTests */,
-				31F4017028E20ADB00CA3F57 /* ZeroConfChatUITests */,
 				31F4015328E20ADA00CA3F57 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,7 +72,6 @@
 			children = (
 				31F4015228E20ADA00CA3F57 /* ZeroConfChat.app */,
 				31F4016328E20ADB00CA3F57 /* ZeroConfChatTests.xctest */,
-				31F4016D28E20ADB00CA3F57 /* ZeroConfChatUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,18 +99,25 @@
 		31F4016628E20ADB00CA3F57 /* ZeroConfChatTests */ = {
 			isa = PBXGroup;
 			children = (
-				31F4016728E20ADB00CA3F57 /* ZeroConfChatTests.swift */,
+				31F4018428E3106400CA3F57 /* Bonjour */,
 			);
 			path = ZeroConfChatTests;
 			sourceTree = "<group>";
 		};
-		31F4017028E20ADB00CA3F57 /* ZeroConfChatUITests */ = {
+		31F4018328E3105A00CA3F57 /* Bonjour */ = {
 			isa = PBXGroup;
 			children = (
-				31F4017128E20ADB00CA3F57 /* ZeroConfChatUITests.swift */,
-				31F4017328E20ADB00CA3F57 /* ZeroConfChatUITestsLaunchTests.swift */,
+				31F4018528E3107C00CA3F57 /* P2PBrowser.swift */,
 			);
-			path = ZeroConfChatUITests;
+			path = Bonjour;
+			sourceTree = "<group>";
+		};
+		31F4018428E3106400CA3F57 /* Bonjour */ = {
+			isa = PBXGroup;
+			children = (
+				31E1DB3728EB268300BEB185 /* P2PBrowserTests.swift */,
+			);
+			path = Bonjour;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,24 +161,6 @@
 			productReference = 31F4016328E20ADB00CA3F57 /* ZeroConfChatTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		31F4016C28E20ADB00CA3F57 /* ZeroConfChatUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 31F4017D28E20ADB00CA3F57 /* Build configuration list for PBXNativeTarget "ZeroConfChatUITests" */;
-			buildPhases = (
-				31F4016928E20ADB00CA3F57 /* Sources */,
-				31F4016A28E20ADB00CA3F57 /* Frameworks */,
-				31F4016B28E20ADB00CA3F57 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				31F4016F28E20ADB00CA3F57 /* PBXTargetDependency */,
-			);
-			name = ZeroConfChatUITests;
-			productName = ZeroConfChatUITests;
-			productReference = 31F4016D28E20ADB00CA3F57 /* ZeroConfChatUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,10 +175,6 @@
 						CreatedOnToolsVersion = 13.4.1;
 					};
 					31F4016228E20ADB00CA3F57 = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 31F4015128E20ADA00CA3F57;
-					};
-					31F4016C28E20ADB00CA3F57 = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 31F4015128E20ADA00CA3F57;
 					};
@@ -231,7 +198,6 @@
 			targets = (
 				31F4015128E20ADA00CA3F57 /* ZeroConfChat */,
 				31F4016228E20ADB00CA3F57 /* ZeroConfChatTests */,
-				31F4016C28E20ADB00CA3F57 /* ZeroConfChatUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -253,13 +219,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31F4016B28E20ADB00CA3F57 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -269,6 +228,7 @@
 			files = (
 				31F4015828E20ADA00CA3F57 /* ContentView.swift in Sources */,
 				31F4015628E20ADA00CA3F57 /* ZeroConfChatApp.swift in Sources */,
+				31F4018628E3107C00CA3F57 /* P2PBrowser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,16 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31F4016828E20ADB00CA3F57 /* ZeroConfChatTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		31F4016928E20ADB00CA3F57 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				31F4017428E20ADB00CA3F57 /* ZeroConfChatUITestsLaunchTests.swift in Sources */,
-				31F4017228E20ADB00CA3F57 /* ZeroConfChatUITests.swift in Sources */,
+				31E1DB3828EB268300BEB185 /* P2PBrowserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,11 +247,6 @@
 			isa = PBXTargetDependency;
 			target = 31F4015128E20ADA00CA3F57 /* ZeroConfChat */;
 			targetProxy = 31F4016428E20ADB00CA3F57 /* PBXContainerItemProxy */;
-		};
-		31F4016F28E20ADB00CA3F57 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 31F4015128E20ADA00CA3F57 /* ZeroConfChat */;
-			targetProxy = 31F4016E28E20ADB00CA3F57 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -424,7 +370,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ZeroConfChat/ZeroConfChat.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ZeroConfChat/Preview Content\"";
@@ -440,6 +387,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thodo.ZeroConfChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -451,7 +399,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ZeroConfChat/ZeroConfChat.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ZeroConfChat/Preview Content\"";
@@ -467,6 +416,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thodo.ZeroConfChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -510,40 +460,6 @@
 			};
 			name = Release;
 		};
-		31F4017E28E20ADB00CA3F57 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AHY6435XC9;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thodo.ZeroConfChatUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = ZeroConfChat;
-			};
-			name = Debug;
-		};
-		31F4017F28E20ADB00CA3F57 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = AHY6435XC9;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thodo.ZeroConfChatUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = ZeroConfChat;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -570,15 +486,6 @@
 			buildConfigurations = (
 				31F4017B28E20ADB00CA3F57 /* Debug */,
 				31F4017C28E20ADB00CA3F57 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		31F4017D28E20ADB00CA3F57 /* Build configuration list for PBXNativeTarget "ZeroConfChatUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				31F4017E28E20ADB00CA3F57 /* Debug */,
-				31F4017F28E20ADB00CA3F57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

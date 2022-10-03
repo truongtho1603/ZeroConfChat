@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var username = ""
+    @State var browsingButtonTitle = ""
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            TextField("Name", text: $username)
+            Button(browsingButtonTitle) {
+                //
+            }
+        }
+
+        List {
+            Text("User 1")
+        }
     }
 }
 
