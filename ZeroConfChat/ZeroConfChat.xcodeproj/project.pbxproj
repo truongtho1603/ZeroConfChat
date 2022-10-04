@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31450EF928ECD50D007993BC /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31450EF828ECD50D007993BC /* Logger.swift */; };
+		31AD5D8F28ECE2C6002AF9F4 /* NWParameters+TLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD5D8E28ECE2C6002AF9F4 /* NWParameters+TLS.swift */; };
+		31AD5D9328ECE358002AF9F4 /* P2PServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD5D9228ECE358002AF9F4 /* P2PServer.swift */; };
+		31AD5D9628ECE396002AF9F4 /* GlobalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD5D9528ECE396002AF9F4 /* GlobalProperties.swift */; };
 		31E1DB3828EB268300BEB185 /* P2PBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1DB3728EB268300BEB185 /* P2PBrowserTests.swift */; };
 		31F4015628E20ADA00CA3F57 /* ZeroConfChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4015528E20ADA00CA3F57 /* ZeroConfChatApp.swift */; };
 		31F4015828E20ADA00CA3F57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4015728E20ADA00CA3F57 /* ContentView.swift */; };
@@ -27,6 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31450EF628ECD108007993BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		31450EF828ECD50D007993BC /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		31AD5D8E28ECE2C6002AF9F4 /* NWParameters+TLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NWParameters+TLS.swift"; sourceTree = "<group>"; };
+		31AD5D9228ECE358002AF9F4 /* P2PServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2PServer.swift; sourceTree = "<group>"; };
+		31AD5D9528ECE396002AF9F4 /* GlobalProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalProperties.swift; sourceTree = "<group>"; };
 		31E1DB3728EB268300BEB185 /* P2PBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2PBrowserTests.swift; sourceTree = "<group>"; };
 		31F4015228E20ADA00CA3F57 /* ZeroConfChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroConfChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F4015528E20ADA00CA3F57 /* ZeroConfChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroConfChatApp.swift; sourceTree = "<group>"; };
@@ -57,9 +66,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31450EF728ECD500007993BC /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				31450EF828ECD50D007993BC /* Logger.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		31AD5D8D28ECE2B5002AF9F4 /* NWParameters */ = {
+			isa = PBXGroup;
+			children = (
+				31AD5D8E28ECE2C6002AF9F4 /* NWParameters+TLS.swift */,
+			);
+			path = NWParameters;
+			sourceTree = "<group>";
+		};
+		31AD5D9028ECE33E002AF9F4 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				31F4018528E3107C00CA3F57 /* P2PBrowser.swift */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
+		31AD5D9128ECE345002AF9F4 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				31AD5D9228ECE358002AF9F4 /* P2PServer.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		31AD5D9428ECE374002AF9F4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				31AD5D9528ECE396002AF9F4 /* GlobalProperties.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		31AD5D9728ECE574002AF9F4 /* Peer Connection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Peer Connection";
+			sourceTree = "<group>";
+		};
 		31F4014928E20ADA00CA3F57 = {
 			isa = PBXGroup;
 			children = (
+				31450EF728ECD500007993BC /* Logging */,
 				31F4018328E3105A00CA3F57 /* Bonjour */,
 				31F4015428E20ADA00CA3F57 /* ZeroConfChat */,
 				31F4016628E20ADB00CA3F57 /* ZeroConfChatTests */,
@@ -79,6 +136,7 @@
 		31F4015428E20ADA00CA3F57 /* ZeroConfChat */ = {
 			isa = PBXGroup;
 			children = (
+				31450EF628ECD108007993BC /* Info.plist */,
 				31F4015528E20ADA00CA3F57 /* ZeroConfChatApp.swift */,
 				31F4015728E20ADA00CA3F57 /* ContentView.swift */,
 				31F4015928E20ADB00CA3F57 /* Assets.xcassets */,
@@ -107,7 +165,11 @@
 		31F4018328E3105A00CA3F57 /* Bonjour */ = {
 			isa = PBXGroup;
 			children = (
-				31F4018528E3107C00CA3F57 /* P2PBrowser.swift */,
+				31AD5D9428ECE374002AF9F4 /* Core */,
+				31AD5D9128ECE345002AF9F4 /* Server */,
+				31AD5D9028ECE33E002AF9F4 /* Browser */,
+				31AD5D9728ECE574002AF9F4 /* Peer Connection */,
+				31AD5D8D28ECE2B5002AF9F4 /* NWParameters */,
 			);
 			path = Bonjour;
 			sourceTree = "<group>";
@@ -227,8 +289,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				31F4015828E20ADA00CA3F57 /* ContentView.swift in Sources */,
+				31AD5D8F28ECE2C6002AF9F4 /* NWParameters+TLS.swift in Sources */,
 				31F4015628E20ADA00CA3F57 /* ZeroConfChatApp.swift in Sources */,
+				31AD5D9628ECE396002AF9F4 /* GlobalProperties.swift in Sources */,
+				31AD5D9328ECE358002AF9F4 /* P2PServer.swift in Sources */,
 				31F4018628E3107C00CA3F57 /* P2PBrowser.swift in Sources */,
+				31450EF928ECD50D007993BC /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +371,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -358,7 +424,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -379,6 +445,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZeroConfChat/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -388,8 +455,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.thodo.ZeroConfChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -408,6 +477,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ZeroConfChat/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -417,8 +487,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.thodo.ZeroConfChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
