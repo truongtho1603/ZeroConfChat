@@ -46,6 +46,9 @@ class P2PBrowser: P2PBrowserProtocol {
 
             results.forEach { result in
                 if case NWEndpoint.service = result.endpoint {
+                    if sharedConnection == nil {
+                        sharedConnection = PeerConnection(endpoint: result.endpoint)
+                    }
                     Logger.application.info("Result: \(String(describing: result)) in browseResultsChangedHandler")
                 }
             }

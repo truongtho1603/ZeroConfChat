@@ -6,6 +6,9 @@
 //
 
 import Foundation
+import Network
 
 let BonjourServiceName = "_zeroconfchat._tcp"
 let TLSEncryptionKey = "SpecialKeyword"
+
+var sharedConnection: PeerConnection?

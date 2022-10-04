@@ -11,6 +11,7 @@
 		31AD5D8F28ECE2C6002AF9F4 /* NWParameters+TLS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD5D8E28ECE2C6002AF9F4 /* NWParameters+TLS.swift */; };
 		31AD5D9328ECE358002AF9F4 /* P2PServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD5D9228ECE358002AF9F4 /* P2PServer.swift */; };
 		31AD5D9628ECE396002AF9F4 /* GlobalProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD5D9528ECE396002AF9F4 /* GlobalProperties.swift */; };
+		31AD5D9928ECE5E5002AF9F4 /* PeerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31AD5D9828ECE5E5002AF9F4 /* PeerConnection.swift */; };
 		31E1DB3828EB268300BEB185 /* P2PBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E1DB3728EB268300BEB185 /* P2PBrowserTests.swift */; };
 		31F4015628E20ADA00CA3F57 /* ZeroConfChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4015528E20ADA00CA3F57 /* ZeroConfChatApp.swift */; };
 		31F4015828E20ADA00CA3F57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4015728E20ADA00CA3F57 /* ContentView.swift */; };
@@ -36,6 +37,7 @@
 		31AD5D8E28ECE2C6002AF9F4 /* NWParameters+TLS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NWParameters+TLS.swift"; sourceTree = "<group>"; };
 		31AD5D9228ECE358002AF9F4 /* P2PServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2PServer.swift; sourceTree = "<group>"; };
 		31AD5D9528ECE396002AF9F4 /* GlobalProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalProperties.swift; sourceTree = "<group>"; };
+		31AD5D9828ECE5E5002AF9F4 /* PeerConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerConnection.swift; sourceTree = "<group>"; };
 		31E1DB3728EB268300BEB185 /* P2PBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = P2PBrowserTests.swift; sourceTree = "<group>"; };
 		31F4015228E20ADA00CA3F57 /* ZeroConfChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeroConfChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31F4015528E20ADA00CA3F57 /* ZeroConfChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroConfChatApp.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		31AD5D9728ECE574002AF9F4 /* Peer Connection */ = {
 			isa = PBXGroup;
 			children = (
+				31AD5D9828ECE5E5002AF9F4 /* PeerConnection.swift */,
 			);
 			path = "Peer Connection";
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				31F4015828E20ADA00CA3F57 /* ContentView.swift in Sources */,
 				31AD5D8F28ECE2C6002AF9F4 /* NWParameters+TLS.swift in Sources */,
 				31F4015628E20ADA00CA3F57 /* ZeroConfChatApp.swift in Sources */,
+				31AD5D9928ECE5E5002AF9F4 /* PeerConnection.swift in Sources */,
 				31AD5D9628ECE396002AF9F4 /* GlobalProperties.swift in Sources */,
 				31AD5D9328ECE358002AF9F4 /* P2PServer.swift in Sources */,
 				31F4018628E3107C00CA3F57 /* P2PBrowser.swift in Sources */,
